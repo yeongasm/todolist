@@ -10,15 +10,17 @@ $(function(){
 		//Submit form using AJAX.
 		$.ajax({
 			type: 'POST',
-			url: $(form).attr('action'),
+			url: 'php/main_menu.php',
 			data: formData
 		})
 		.done(function(response){
-			window.location = 'main.php';
+			var data = $.parseJSON(response);
+			console.log(data);
+			window.location.replace('php/user.php?user='+data.user+'&log='+data.log);
 			//Make sure that the err_msg div has the 'success' class.
 			// $(err).removeClass('error');
 			// $(err).addClass('success');
-			//Set the message text.
+			// Set the message text.
 			// $(err).text(response); 
 		})
 		.fail(function(data){

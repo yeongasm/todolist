@@ -14,12 +14,12 @@ $(function(){
 			data: formData
 		})
 		.done(function(response){
-			// window.location = 'main.php';
+			window.location.href = 'main.php';
 			//Make sure that the err_msg div has the 'success' class.
-			$(err).removeClass('error');
-			$(err).addClass('success');
+			// $(err).removeClass('error');
+			// $(err).addClass('success');
 			//Set the message text.
-			$(err).text(response); 
+			// $(err).text(response); 
 		})
 		.fail(function(data){
 			//Make sure that the err_msg dive has the error class.

@@ -61,9 +61,10 @@ if (empty($chkbox)){
 	if (!$conn){
 		http_response_code(500);
 		echo "ERROR: ".$sql."<br>".$conn->error;
+		return false;
 	}
 	http_response_code(200);
-	$_POST['new_user'] = true; 		
+	// $_POST['new_user'] = true; 		
 	// $sql->bind_param('isss', $uid, $uname, $email, md5($pwd)); 
 	// $sql->execute(); 
 	// var_dump($sql);

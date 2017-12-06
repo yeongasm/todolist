@@ -1,0 +1,45 @@
+#nav_header {
+	background-color: #404040;
+	z-index: 100;
+	box-shadow: 1px 7px 19px 0px #999;
+}
+
+.navbar {
+	padding: 1.75rem 1rem;
+}
+
+#nav_welcome{
+	color: #FFFFFF;
+	font-size: 20px;
+	position: absolute;
+	left: 10%;
+}
+
+#nav_logout {
+	position: absolute;
+	right: 20px;
+	color: #C1BDBD;
+	font-size: 15px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#nav_logout:hover {
+	color: #FFFFFF;
+	font-size: 15px;
+}
+
+.button {
+	position: absolute;
+	right: 20px;
+	border-radius: 10px;
+	padding: 10px;
+	cursor: pointer;
+	background: #5A5858;
+	text-decoration: none;
+}
+
+.button:hover {
+	box-shadow: 0px 0px 10px 2px #F7057B;
+	background: #F7057B;
+}
