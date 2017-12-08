@@ -10,17 +10,15 @@ $(function(){
 		//Submit form using AJAX.
 		$.ajax({
 			type: 'POST',
-			url: 'php/main_menu.php',
+			url: $(form).attr('action'),
 			data: formData
 		})
 		.done(function(response){
-			var data = $.parseJSON(response);
-			console.log(data);
-			window.location.replace('php/user.php?user='+data.user+'&log='+data.log);
+			window.location.replace('main.php');
 			//Make sure that the err_msg div has the 'success' class.
 			// $(err).removeClass('error');
 			// $(err).addClass('success');
-			// Set the message text.
+			//Set the message text.
 			// $(err).text(response); 
 		})
 		.fail(function(data){
@@ -32,7 +30,7 @@ $(function(){
 			if (data.responseText !== ''){
 				$(err).text(data.responseText);
 			} else {
-				$(err).text('Oops! An error occured an your could no be sent to'+$(form).attr('action'));
+				$(err).text('Oops! An error occured and your data could no be sent to'+$(form).attr('action'));
 			}
 		});
 	});		

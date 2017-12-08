@@ -2,3 +2,4 @@ REMINDER!!!:
 
 1) All Ajax forms must contain the '#ajax_form' as the <div> id. 
 2) Error messages displayed during an ajax form request must contain '#err_msg' as the <div> id. 
+3) Font used in logo, Lemon Milk 

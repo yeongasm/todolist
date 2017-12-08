@@ -14,11 +14,13 @@ $(function(){
 			data: formData
 		})
 		.done(function(response){
-			window.location.href = 'main.php';
+			var data = $.parseJSON(response);
+			console.log(data);
+			window.location.replace('user.php?user='+data.user+'&log='+data.log+'&uid='+data.uid);
 			//Make sure that the err_msg div has the 'success' class.
 			// $(err).removeClass('error');
 			// $(err).addClass('success');
-			//Set the message text.
+			// Set the message text.
 			// $(err).text(response); 
 		})
 		.fail(function(data){

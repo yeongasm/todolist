@@ -1,5 +1,5 @@
 <?php
-include_once("database_connection.php"); 
+include_once("database.connection.php"); 
 
 if (isset($_POST['uname']) && isset($_POST['pwd'])){
 	$user = $_POST['uname'];
@@ -22,7 +22,7 @@ if ($row == 0){
 }
 http_response_code(200); 
 while ($col = $res->fetch_assoc()){
-	echo json_encode(array('user'=>$user,'log'=>$col['ULOGGED_IN']));
+	echo json_encode(array('user'=>$user,'log'=>$col['ULOGGED_IN'],'uid'=>$col['UID']));
 	if ($col['ULOGGED_IN'] == 'N'){
 		$sql = 'UPDATE USERS SET ULOGGED_IN = \'Y\' WHERE UID=\''.$col['UID'].'\';';
 		$update = $conn->query($sql);

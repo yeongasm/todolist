@@ -1,0 +1,106 @@
+.menu_opener {
+  display: none;
+}
+
+.menu_opener:checked ~ .link_one {
+	top: 60px;
+	opacity: 1;
+}
+
+.menu_opener:checked ~ .link_two {
+	top: 110px;
+	opacity: 1;
+}
+
+.menu_opener:checked ~ .link_three {
+	top: 160px;
+	opacity: 1;
+}
+
+.menu_opener:checked ~ .link_four {
+	top: 210px;
+	opacity: 1;
+}
+
+.menu_opener:checked ~ .link-general {
+	-webkit-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+
+.menu_opener:checked ~ .menu_opener_label {
+	transform: rotate(180deg);
+}
+
+.menu_opener_label {
+	display: inline-block;
+	cursor: pointer;
+	border-radius: 50%;
+	position: absolute;
+	top: 3px;
+	left: 40px;
+	z-index: 10;
+	-webkit-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+
+.link_general {
+	width: 40px;
+	height: 40px;
+	display: block;
+	opacity: 0;
+	border-radius: 50%;
+	position: absolute;
+	top: 10px;
+	left: 45px;
+	background: #FF59A9;
+	-webkit-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	box-shadow: 1px 7px 19px 0px #999;
+}
+
+.link_general:hover {
+	border-radius: 10px;
+	cursor: pointer;
+	width: 200px;
+}
+
+.fa {
+	position: inherit;
+	top: 5px;
+    left: 7px;
+    color: #404040;
+}
+
+.fa-user {
+	left: 8px;
+}
+
+.fa-pencil-square-o {
+	top: 6px;
+	left: 5px;
+}
+
+.fa-cog {
+	top: 5px;
+	left: 6px;
+}
+
+p {
+	opacity: 0;
+	overflow: hidden;
+	position: inherit;
+    left: 60px;
+    /*font-weight: bold;*/
+    font-size: 24px;
+    top: 3px;
+    -webkit-transition: all 0.1s ease;
+	transition: all 0.1s ease;
+}
+
+.link_general:hover p {
+	opacity: 1;
+	overflow: hidden;
+	white-space: nowrap;
+	-webkit-transition: all 1s ease;
+	transition: all 1s ease;
+}

@@ -4,18 +4,18 @@ include_once("global.php");?>
 <head>
 	<title>Sign Up - <?php echo TITLE; ?></title>
 	<!--Bootstrap-->
-	<link rel="stylesheet" type="text/css" href="bootstrap-4.0.0-beta.2/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../bootstrap-4.0.0-beta.2/dist/css/bootstrap.min.css">
 	<!--//Bootstrap-->
-	<link rel="stylesheet" href="css/signup.css" type="text/css">
-	<script src="jquery-3.2.1.js"></script>
-	<script src="js/ajax_signup_menu.js"></script>
+	<link rel="stylesheet" href="../css/signup.css" type="text/css">
+	<script src="../jquery-3.2.1.js"></script>
+	<script src="../js/ajax.signup.js"></script>
 </head>
 <body>
 	<div id="signup_box" class="container">
 		<h2 id="signup_text" class="form-signin-heading">Sign Up!</h2>	
 		<div id="err_msg">
 	    </div>
-		<form id="ajax_form" method="post" action="php/signup_menu.php" class="form-signin">
+		<form id="ajax_form" method="post" action="signup.script.php" class="form-signin">
 			<div class="form-inline">
 				<label class="control-label col-sm-2" for="reg_user">Username:</label>
 				<input type="text" name="uname" class="form-control" id="reg_user" required autofocus>

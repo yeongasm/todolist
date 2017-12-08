@@ -4,18 +4,18 @@
 <head>
 	<title><?php echo TITLE; ?></title>
 	<!--Bootstrap-->
-	<link rel="stylesheet" type="text/css" href="bootstrap-4.0.0-beta.2/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../bootstrap-4.0.0-beta.2/dist/css/bootstrap.min.css">
 	<!--//Bootstrap-->
-	<link rel="stylesheet" href="css/main.css" type="text/css">
-	<script src="jquery-3.2.1.js"></script>
-	<script type="text/javascript" src="js/ajax_main.js"></script>
+	<link rel="stylesheet" href="../css/main.css" type="text/css">
+	<script src="../jquery-3.2.1.js"></script>
+	<script type="text/javascript" src="../js/ajax.main.js"></script>
 </head>
 <body>
 <div id="login_box" class="container">
 	<h2 id="sign_in_txt" class="form-signin-heading">Please Sign In</h2>
 	<div id="err_msg">
 	</div>
-	<form id="ajax_form" method="post" action="php/main_menu.php" class="form-signin">
+	<form id="ajax_form" method="post" action="main.script.php" class="form-signin">
 		<label for="input_uname" class="sr-only">Username</label>
 		<input type="text" name="uname" class="form-control" id="input_uname" placeholder="Username" required autofocus>
 		<label for="input_pwd" class="sr-only">Password</label>
