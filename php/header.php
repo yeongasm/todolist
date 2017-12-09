@@ -1,8 +1,9 @@
 <?php
 include_once("global.php");
-$welcome = ($_GET['log'] == 'N')?'Welcome ':'Welcome back, ';
+$welcome = (LOG == 'N')?'Welcome ':'Welcome back, ';
 ?>
 <head>
+	<link rel="icon" href="../img/favicon.ico" type="image/x-icon">
 	<title>Dashboard - <?php echo TITLE; ?></title>
 	<link rel="stylesheet" type="text/css" href="../bootstrap-4.0.0-beta.2/dist/css/bootstrap.css">
 	<link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
@@ -27,6 +28,7 @@ $welcome = ($_GET['log'] == 'N')?'Welcome ':'Welcome back, ';
 		<?php echo $welcome."<b>".$_GET['user']."</b>";?>
 	</div>
 	<div id="nav_logout">Log Out</div>
+	<div id="logout_div"></div>
 </nav>
 
 <div id="modaltest"></div>

@@ -3,6 +3,7 @@ include_once("global.php");?>
 <html>
 <head>
 	<title>Sign Up - <?php echo TITLE; ?></title>
+	<link rel="icon" href="../img/favicon.ico" type="image/x-icon">
 	<!--Bootstrap-->
 	<link rel="stylesheet" type="text/css" href="../bootstrap-4.0.0-beta.2/dist/css/bootstrap.min.css">
 	<!--//Bootstrap-->

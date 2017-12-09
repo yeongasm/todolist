@@ -21,12 +21,12 @@ $(function(){
 			data: formData
 		})
 		.done(function(response){
+			$('#myModal').modal('hide');
 			//Make sure that the err_msg div has the 'success' class.
 			// $(err).removeClass('error');
 			// $(err).addClass('success');
 			//Set the message text.
 			// $(err).text(response);
-			console.log(response);
 		})
 		.fail(function(data){
 			//Make sure that the err_msg dive has the error class.
