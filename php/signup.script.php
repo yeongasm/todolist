@@ -50,12 +50,7 @@ if (empty($chkbox)){
 	}
 	$result->free();
 
-	if ($uid = $conn->query('SELECT * FROM USERS')){
-		$uid = $uid->num_rows + 1; 
-	}
-
-	$sql = 'INSERT INTO USERS (UID, UNAME, UEMAIL, UPASSWORD) VALUES (\''.$uid.'\',\''.$uname.'\',\''.$email.'\',\''.md5($pwd).'\')';
-
+	$sql = 'INSERT INTO USERS (UNAME, UEMAIL, UPASSWORD) VALUES (\''.$uname.'\',\''.$email.'\',\''.md5($pwd).'\')';
 	//Use $conn to perform any actions related to database
 	$conn->query($sql);
 	if (!$conn){
@@ -64,8 +59,4 @@ if (empty($chkbox)){
 		return false;
 	}
 	http_response_code(200);
-	// $_POST['new_user'] = true; 		
-	// $sql->bind_param('isss', $uid, $uname, $email, md5($pwd)); 
-	// $sql->execute(); 
-	// var_dump($sql);
 }
