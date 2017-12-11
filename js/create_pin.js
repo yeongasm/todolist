@@ -11,9 +11,9 @@ $(function(){
 	var err = $('#err_msg');
 
 	$(form).submit(function(e){
+		console.log('Here');
 		e.preventDefault();
 		var formData = $(form).serialize(); 
-
 		//Submit form using AJAX.
 		$.ajax({
 			type: 'POST',

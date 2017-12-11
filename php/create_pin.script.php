@@ -32,8 +32,7 @@ if ($result = $conn->query($sql)){
 	echo "ERROR: ".$sql."<br>".$result->error;
 	return false;
 }
-$pid = $pin->setID('NPINS');
-$sql = 'INSERT INTO NPINS (PID, PNAME, PTAG, PTEXT, PAUTHOR, PUID) VALUES (\''.$pid.'\',\''.$pname.'\',\''.$ptag.'\',\''.$ptext.'\',\''.$uname.'\',\''.UID.'\')';
+$sql = 'INSERT INTO NPINS (PNAME, PTAG, PTEXT, PAUTHOR, PUID) VALUES (\''.$pname.'\',\''.$ptag.'\',\''.$ptext.'\',\''.$uname.'\',\''.UID.'\')';
 $conn->query($sql);
 if (!$conn){
 	http_response_code(500);

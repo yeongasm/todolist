@@ -16,6 +16,9 @@ $(function(){
     document.onscroll = scroll;
 
     $("#createBtn").click(function(){
+        if ($('.menu_opener').is(':checked')){
+            $('.menu_opener').prop('checked', false);
+        }
 		$('#modaltest').load('create_pin.php', function(){
 			$('#myModal').modal({show:true});
 		});	
