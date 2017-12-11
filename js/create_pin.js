@@ -21,7 +21,8 @@ $(function(){
 			data: formData
 		})
 		.done(function(response){
-			$('#myModal').modal('hide');
+			window.location.reload();
+			// $('#myModal').modal('hide');
 			//Make sure that the err_msg div has the 'success' class.
 			// $(err).removeClass('error');
 			// $(err).addClass('success');

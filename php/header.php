@@ -15,20 +15,21 @@ $welcome = (LOG == 'N')?'Welcome ':'Welcome back, ';
 	<!-- <script src="../bootstrap-4.0.0-beta.2/dist/js/bootstrap.js"></script> -->
 	<script src="../js/header.js"></script>
 </head>
-<body>
-<nav id="nav_header" class="navbar navbar-static-top">
-	<input type="checkbox" id="menu_opener_id" class="menu_opener">
-		<label for="menu_opener_id" class="menu_opener_label"><img src="../img/noted_logo.svg"></label>
-		<div class="link_one link_general" id="createBtn"><i class="fa fa-plus fa-2x" aria-hidden="true"></i><p>Create Pin</p></div>
-		<div class="link_two link_general" id="edit_pin"><i class="fa fa-pencil-square-o fa-2x" aria-hidden="true"></i><p>Edit Pins</p></div>
-		<div class="link_three link_general" id="user_profile"><i class="fa fa-user fa-2x"></i><p><!-- User Profile -->:(</p></div>
-		<div class="link_four link_general" id="noted_settings"><i class="fa fa-cog fa-2x"></i><p><!-- Settings -->:(</p></div>
-	</input>		
-	<div id="nav_welcome">
-		<?php echo $welcome."<b>".$_GET['user']."</b>";?>
-	</div>
-	<div id="nav_logout">Log Out</div>
-	<div id="logout_div"></div>
-</nav>
-
+<header>
+	<nav id="nav_header" class="navbar navbar-static-top">
+		<input type="checkbox" id="menu_opener_id" class="menu_opener">
+			<label for="menu_opener_id" class="menu_opener_label"><img src="../img/noted_logo.svg"></label>
+			<div class="link_one link_general" id="createBtn"><i class="fa fa-plus fa-2x" aria-hidden="true"></i><p>Create Pin</p></div>
+			<div class="link_two link_general" id="edit_pin"><i class="fa fa-pencil-square-o fa-2x" aria-hidden="true"></i><p>Edit Board</p></div>
+			<div class="link_three link_general" id="user_profile"><i class="fa fa-user fa-2x"></i><p><!-- User Profile -->:(</p></div>
+			<div class="link_four link_general" id="noted_settings"><i class="fa fa-cog fa-2x"></i><p><!-- Settings -->:(</p></div>
+		</input>		
+		<div id="nav_welcome">
+			<?php echo $welcome."<b>".$_GET['user']."</b>";?>
+		</div>
+		<div id="nav_logout">Log Out</div>
+		<div id="logout_div"></div>
+	</nav>
+</header>
 <div id="modaltest"></div>
+<div class="content">

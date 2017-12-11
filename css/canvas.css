@@ -1,0 +1,41 @@
+#note_container {
+	background-color: #E3E3E3;
+	border-radius: 10px;
+	margin-top: 20px;
+	height: 100px;
+	width: 50%;
+	box-shadow: 1px 7px 19px 0px #999
+}
+.container_header {
+	display: inline-block;
+}
+#note_tag {
+	position: inherit;
+    float: right;
+    background: #F7057B;
+    border-radius: 5px;
+    margin-top: 5px;
+    width: 100px;
+    text-align: center;
+    font-weight: bold;
+    margin-right: 10px;
+}
+#note_text {
+	height: 40px;
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+#note_text_contents {
+	position: inherit;
+	margin-left: 10px;
+}
+.trash_icon{
+	position: inherit;
+    float: right;
+    font-size: 1.5em;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.trash_icon:hover{
+    color: #F7057B; 
+}

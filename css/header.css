@@ -2,6 +2,10 @@
 	background-color: #404040;
 	z-index: 100;
 	box-shadow: 1px 7px 19px 0px #999;
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 .navbar {
@@ -37,5 +41,8 @@
 	cursor: pointer;
 	background: #5A5858;
 	text-decoration: none;
+}
+.content {
+    padding: 50px;
 }
 
