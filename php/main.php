@@ -1,4 +1,11 @@
-<?php include_once("global.php") ?>
+<?php 
+include_once("global.php");
+session_start();
+if (isset($_SESSION['uid'])){
+	header('Location: user.php?user='.$_SESSION['user'].'&log='.$_SESSION['log'].'&uid='.$_SESSION['uid']);
+	exit();
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
