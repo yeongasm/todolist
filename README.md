@@ -6,6 +6,6 @@ https://benoted.herokuapp.com/index.php
 
 Be sure to make an account first ;)
 
--Click on the 'N' icon next to 'Welcome' to show the drop down menu.
+-Click on the ######**'N'** icon next to 'Welcome' to show the drop down menu.
 
--Only avaiable option for now is the 'Create Pin' option.
+>Only avaiable option for now is the 'Create Pin' option.
